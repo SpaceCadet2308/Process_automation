@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge AI Text Summarizer - One-Click Summariza",
+  "Type": "Screen",
+  "Id": "9tkiVm0ZNkmOGIxkONXFqw",
+  "Reference": "4iMeWFZgFUuVDJQ2t7cOJQ/9tkiVm0ZNkmOGIxkONXFqw",
+  "ParentRef": "4iMeWFZgFUuVDJQ2t7cOJQ/KGxKiAYiw0GiQSTZoSSb5w",
+  "Created": "2024-10-07T07:06:11.4763877Z",
+  "Updated": "2024-10-07T07:06:11.4763877Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

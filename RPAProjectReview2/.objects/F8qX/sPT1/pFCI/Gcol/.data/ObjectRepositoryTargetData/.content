@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d6I9xZUEAk-zorQ5solYdg" Reference="4iMeWFZgFUuVDJQ2t7cOJQ/Gcol-y4EAEG3kIkGmV_dUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://127.0.0.1:5000/" CVScreenId="6a120698-51eb-4a51-bccc-6241af9c4513" CvTextArea="692, 903, 94, 14" CvTextArgument="Enter Tamil text" CvType="Text" DesignTimeRectangle="693, 861, 200, 100" DesignTimeScaleFactor="0.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' placeholder='Enter Tamil text' aaname='' /&gt;" Guid="e8fa466e-5e81-4c79-b15d-64888b4797ca" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tamil Grammar Checker' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bea33f50a780f4af61cb6481a70bd853.png" xmlns="">0BwFlf07sb0qRc3LDQXCEMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Text 'Portronics Dash 3 16W B…'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "cGPox8SK10OBN7qDnIMSwQ",
+  "Reference": "4iMeWFZgFUuVDJQ2t7cOJQ/cGPox8SK10OBN7qDnIMSwQ",
+  "ParentRef": "4iMeWFZgFUuVDJQ2t7cOJQ/JDcqFhc9xUqx6fujKa2jRg",
+  "Created": "2024-09-02T16:48:44.8747829Z",
+  "Updated": "2024-09-02T16:48:44.8747829Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_Name&Sequence_4",
+        "str_Price&Sequence_4",
+        "str_Rating&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Input_ProductName",
+        "Output_Price",
+        "Output_Rating",
+        "Output_Name",
+        "Output_Image"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RPA_Project.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Output&Sequence_7",
+        "str_grammar_output&Sequence_8",
+        "outputElement&Sequence_1",
+        "pattern&Sequence_1",
+        "str_translation&Sequence_5",
+        "str_summarized&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Input_Tamil_Text",
+        "Input_English_Text",
+        "Input_Summarized_Text",
+        "Input_Grammar_Checker",
+        "Output_Price",
+        "Output_Rating",
+        "Output_Name"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

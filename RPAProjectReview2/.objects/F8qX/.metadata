@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Tamil Grammar Checker",
+  "Type": "App",
+  "Id": "F8qXh92AgE6YP246iv-75g",
+  "Reference": "4iMeWFZgFUuVDJQ2t7cOJQ/F8qXh92AgE6YP246iv-75g",
+  "Created": "2024-11-06T17:45:22.4618006Z",
+  "Updated": "2024-11-06T17:45:22.4618006Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,382 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.Input_Tamil_Text="இன்று உலகம் மூத்த குடிமகன்களின் தினத்தை அனுசரிக்கிறது. கொண்டாடுகிறது என்பதை விட அனுசரிக்கிறது என்பதுதான் பொருத்தமாக இருக்கும் என நான் நினைப்பதால். வருடத்தில் ஒருமுறை அனுசரிக்கப்படும் எந்த நிகழ்ச்சியின் முக்கியத்துவம் பொதுவாக அந்த ஒரு தினம் மட்டுமே இருக்கும். சுற்றுப்புற சூழல் தினம், மனித நேய தினம், நண்பர்கள் தினம், பெண்கள் தினம், தாய்மார்கள் தினம், தந்தையர்கள் தினம் போன்ற பல நிகழ்ச்சிகளை நாம் குறிப்பிடலாம்.&#xA;அந்த வகையிலே இன்று உலகமெங்கும் மூத்த குடிமகன்கள் தினம் அனுசரிக்கப்படுகிறது. இந்த தினத்தை ஏற்பாடு செய்பவர்களும் சரி, அனுசரிபவர்களும் சரி அல்லது கொன்டாடுபவர் எவரேனும் இருந்தாலும் சரி, அவர்களில் நூற்றில் 99 % மூத்த குடிமகன்களாகத்தான் இருப்பார்கள்.&#xA;ஏனெனில், மற்றவர்கள் அவர்களை கண்டுகொள்வதில்லையே, அரசாங்கம் உட்பட. அறுபது வயதை கடந்தவர்களில் அதிகமானவர்கள் வீட்டிலோ அல்லது மூத்த குடிமகன் இல்லங்களிலோ அல்லது ஏதாவது ஒரு மூலையிலோ அடங்கி ஒடுங்கி பணிந்து வாழ்பவர்கள்தான்." this:Main.Input_English_Text="Today, the world is observing Senior Citizens Day. Because I think it's more appropriate to celebrate than to celebrate. The significance of any event observed once a year is usually only on that one day. Environment Day, Humanity Day, Friendship Day, Women's Day, Mother's Day, Father's Day are some of the events that we can mention.&#xA;Today, Senior Citizens Day is celebrated all over the world. Ninety-nine per cent of the organisers, commemorators or organizers of the day are senior citizens.&#xA;Because others don't care about them, including the government. Most of those who have crossed the age of 60 are submissive at home, in senior citizens' homes or in some corner or the corner." this:Main.Input_Summarized_Text="The world celebrates Senior Citizens Day, with 99% of organizers being senior citizens. This day is more appropriate than other annual events, such as Environment Day, Humanity Day, Friendship Day, Women's Day, Mother's Day, and Father's Day. Most seniors over 60 are submissive at home." this:Main.Input_Grammar_Checker="உலகம் மூத்த குடிமக்கள் தினத்தை கொண்டாடுகிறது, அமைப்பாளர்களில் 99% மூத்த குடிமக்கள். சுற்றுச்சூழல் தினம், மனிதநேய தினம், நண்பர்கள் தினம், மகளிர் தினம், அன்னையர் தினம் மற்றும் தந்தையர் தினம் போன்ற பிற வருடாந்திர நிகழ்வுகளை விட இந்த நாள் மிகவும் பொருத்தமானது. 60 வயதுக்கு மேற்பட்ட பெரும்பாலான முதியவர்கள் வீட்டில் அடங்கி நடக்கிறார்கள்." xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Output_Price" Type="OutArgument(x:String)" />
+    <x:Property Name="Output_Rating" Type="OutArgument(x:String)" />
+    <x:Property Name="Output_Name" Type="OutArgument(x:String)" />
+    <x:Property Name="Input_Tamil_Text" Type="InArgument(x:String)" />
+    <x:Property Name="Input_English_Text" Type="InArgument(x:String)" />
+    <x:Property Name="Input_Summarized_Text" Type="InArgument(x:String)" />
+    <x:Property Name="Input_Grammar_Checker" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>540,2286</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Translation_1" sap:VirtualizedContainerService.HintSize="609.9999999999999,4583.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NGetText_4</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="pattern" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: google translate tamil to english - Search" sap:VirtualizedContainerService.HintSize="450,910" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="96a03c85-c693-4e11-bcb9-d7e7104ebbc4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,659.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_translation" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA tta_input_ta'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="96a03c85-c693-4e11-bcb9-d7e7104ebbc4" Text="[Input_Tamil_Text]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?q=google+translate+tamil+to+english&amp;qs=LC&amp;pq=google+translate+tami&amp;sc=10-21&amp;cvid=E4AB116DD6024F6FB5B9E163212B3DFC&amp;FORM=QBRE&amp;sp=1&amp;ghc=1&amp;lq=0" CVScreenId="41ca2872-0959-4736-87f1-cd892cba73cf" CvTextArea="288, 551, 254, 49" CvTextArgument="Enter text" CvType="Text" DesignTimeRectangle="287, 540, 396, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='tta_input_ta' type='' tag='TEXTAREA' class='ctxt  tta_focusTextLarge  notxt' placeholder='Enter text' aaname='' /&gt;" Guid="b6d43cd3-612f-47d8-b7cf-e999bbf09aa5" InformativeScreenshot="15cdeb78ad0f89a323f35ec3080f56b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='google translate tamil to english - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Today, the world is obs…'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="96a03c85-c693-4e11-bcb9-d7e7104ebbc4" TextString="[str_translation]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?q=google+translate+tamil+to+english&amp;qs=LC&amp;pq=google+translate+tami&amp;sc=10-21&amp;cvid=E4AB116DD6024F6FB5B9E163212B3DFC&amp;FORM=QBRE&amp;sp=1&amp;ghc=1&amp;lq=0" DesignTimeRectangle="380, 335, 243, 942" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='tta_outtxt' parentid='tta_out' type='' tag='DIV' aaname='' /&gt;" Guid="113094ba-58eb-4e2f-bfe8-3ea597b74db2" InformativeScreenshot="ac4e20462f2c2f9cc9d5b303bff9ad8e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='google translate tamil to english - Search' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,116.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[str_translation]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGESURBVFhHzZdBjoMwDEV7Ce7TBdJsegsuMBK3YMWKbVUuVG7QLQdgn8lD9cikk+BItJkvfSkSDn62Q9Wcvr4vGzvnzt6998P7KN29r95VmE8nrrxJ/G6R4xdEJ4fyUyLXCiEAn6g8VL8C+AXVl9IZAA5HKfUAmGY/TZMbhsE1TePqul7Nuus6N8/zMypbDwCSWpZlTSxJYyaG2FwlAXihrnjPxOZCJAHCytu2XUchSVgzAh3DnhxFAZirfvE4js8nr7rdbptYwKyKAujKWO+J7kh8TheiAHr2loqIkXj2WhUFkJdhizgXuXuQCcB6svUeq/7vCPQnyAHbU+6hFUUBdEU45zPM+WmOAqDwh4jKZBycC9b688OWbmklAUiiz4LVqW6FSgIgIMJO/OWwE1aIXQARc2UEuiOsgZOxhGfBAmEGsCoX4nAAlAPxFgAUQsQEwJEXkI0EItGBOwAl/pKLrgBwFSulqvzF5AlQ9mqmIMpcTrV56M1t6ciO8KWR+LzNdzn9ABU9O1uYDZE/AAAAAElFTkSuQmCC" InformativeScreenshot="280e3ad49f1c7aa83236e41a394b205f.jpg" Selector="&lt;html app='msedge.exe' title='google translate tamil to english - Search' /&gt;" Title="google translate tamil to english - Search" Url="https://www.bing.com/search?q=google+translate+tamil+to+english&amp;qs=LC&amp;pq=google+translate+tami&amp;sc=10-21&amp;cvid=E4AB116DD6024F6FB5B9E163212B3DFC&amp;FORM=QBRE&amp;sp=1&amp;ghc=1&amp;lq=0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge AI Text Summarizer - One-Click Summariza" sap:VirtualizedContainerService.HintSize="450,1178" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="5616a5b2-2352-4cae-ac92-c31ebad2da89" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,887.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_summarized" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="5" DisplayName="Type Into 'Enter or paste your tex…'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="5616a5b2-2352-4cae-ac92-c31ebad2da89" Text="[Input_English_Text]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://quillbot.com/summarize" CVScreenId="70bd2542-936a-4ebc-8817-8147f5db90a4" CvTextArea="183, 435, 539, 29" CvTextArgument="Enter or paste your text and press &quot;Summarize.&quot;" CvType="Text" DesignTimeRectangle="183, 435, 539, 28" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="5cbc51ac-6a76-4f45-8d3b-1bafb9e1bb5c" InformativeScreenshot="7cc63979904ce3a8d77d0af74fdbeb79.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="Input 'DIV inputBoxSummarizer'" IsLoose="True" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://quillbot.com/summarize" CVScreenId="dce7487a-257c-4fb9-8326-8dcd6e23df50" CvTextArea="525, 554, 107, 19" CvTextArgument="Paste Text" CvType="Text" DesignTimeRectangle="185, 358, 780, 312" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='inputBoxSummarizer' tag='DIV' type='' class='css-1pb4u3' placeholder='Enter or paste your text and press &amp;quot;Summarize.&amp;quot;' aaname='' /&gt;" Guid="02141c35-9952-41da-a98c-d061cfa4f090" InformativeScreenshot="b8e9c0303093c208e401494446c204e1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:VerifyExecutionTypeIntoOptions.Target>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Summarize'" sap:VirtualizedContainerService.HintSize="382,228" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5616a5b2-2352-4cae-ac92-c31ebad2da89" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://quillbot.com/summarize" CVScreenId="0f607b53-6805-48fa-a404-360ea09b2d48" CvElementArea="784, 944, 195, 68" CvTextArea="815, 965, 135, 22" CvTextArgument="Summarize" CvType="Button" DesignTimeRectangle="818, 958, 130, 38" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Summarize' parentid='root-client' tag='SPAN' type='' class='css-ork8mx' check:innerText='Summarize' /&gt;" Guid="f3b392ac-c36e-413b-a68f-cbc5896f72aa" InformativeScreenshot="f167591b6fa907ea49a2466e8837bb26.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0f607b53-6805-48fa-a404-360ea09b2d48" CvElementArea="784, 944, 195, 68" CvTextArea="815, 965, 135, 22" CvTextArgument="Summarize" CvType="Button" DesignTimeRectangle="788, 947, 190, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Summarize' parentid='root-client' tag='BUTTON' type='button' class='MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge MuiButtonBase-root css-mbkun8' check:innerText='Summarize' /&gt;" Guid="acb46e1b-9f29-4497-b05f-eb09a6b278b0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Summarize'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://quillbot.com/summarize" CVScreenId="557f2c43-be09-43b2-b332-0fb98d62f3fd" CvElementArea="784, 943, 196, 67" CvTextArea="815, 965, 135, 22" CvTextArgument="Summarize" CvType="Button" DesignTimeRectangle="818, 958, 130, 38" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Summarize' parentid='root-client' tag='SPAN' type='' class='css-ork8mx' check:innerText='Summarize' /&gt;" Guid="d453bb43-3bc8-49b3-944b-b8b3e572001e" InformativeScreenshot="6c8d8203a7040b9f493343464efc8729.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="557f2c43-be09-43b2-b332-0fb98d62f3fd" CvElementArea="784, 943, 196, 67" CvTextArea="815, 965, 135, 22" CvTextArgument="Summarize" CvType="Button" DesignTimeRectangle="788, 947, 190, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Summarize' parentid='root-client' tag='BUTTON' type='button' class='MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge MuiButtonBase-root css-mbkun8' check:innerText='Summarize' /&gt;" Guid="3952ced8-ad56-49bf-bc04-eeef153a7461" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'The world celebrates Se…'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="5616a5b2-2352-4cae-ac92-c31ebad2da89" TextString="[str_summarized]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://quillbot.com/summarize" DesignTimeRectangle="1003, 328, 847, 446" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;webctrl type='' class='css-b0dyvv' parentid='root-client' tag='DIV' aaname='' /&gt;" Guid="ac2d8fbc-6e5c-49fd-aba0-c81af9ed8943" InformativeScreenshot="5f87675c0093e38b14883a14d50bf6c5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,116.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[str_summarized]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" ContentHash="W1JWiBp9sU-cg7YDTxjBuA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAwCAYAAABT9ym6AAAABGdBTUEAALGPC/xhBQAABBlJREFUaEPdWkFPE0EU5if4E/gJ/Qk9tg0HDrTbeMJ4xMSe8KhwlBiIdIsaDUQ9aDi0J0xAA1EDCRfFaPRg7QUF0aRCMOFW37fMwOzwdnd2d1oqX/IFs52ded++N/PezDhgC4UHxUy+6lQKc8583i29y7tOi9g5YdVpe89rTr3glm4NzY5ks/PDl8Tr54uhuZEsGTlzbKRidBx6woqjosvewhNQc1ZZw5Kz1TNBubnyoA0BIw+vdO6/WeisfF7rrH/b7Iw+vqb+3l1BBde5niqEBCFgg4yX2D3YY9vRB5vOTlueQ+iUHSwmn24uesYfHv31CNS3lti2gi1EgTAjObCq2JoL994ueIYDCCmJsWfjbHuF6cXkqqX3TMexiTkgjV/5snbijUa4N1QmF2MrnEApAvOh+avl/Ru486rGtg9gfDGUsG4yHSUivCGhzpFlEse1DyWFuTAxGt4Sy3WSkPjqMBwhBY9I3GhMsO2jiKpAmBoOauwvLVJSQnqj+bvVGXseOcFDSXkmI8zlUXDLo9yLSYnEBy+o3gjMG3EYFWLUyKo3Jl5MeWElvYFJr2XxxMzNlrPCbD9sewPE/PA8IlYtZHWuXSIGecVW4lOJ0JJegRiuTRqeKWFMVyoYhiJva/tTV2m6GJxZwbAh4hrqVHNCN4E5xY1/hnp4mYZV3wkh+sKLHhiV5/0o5GT1GiZFXAOO/SiEoqniCcEhANuAYV8KcYszVoQgT8htqyzPTYBsL9/TEUcITm08IXESoS4EhuOZ/H2cCkETQITa7wdaclX0XAjWfL2NCSaXpnzvoAJQkUhIfrY0zDXgyHkESTLo9yDohurhldAjxQzXgCNnKHZ82FvIusoUOHSYpPIFf3XEEiKz+4VZfgF68P8nRCBXdRpcI539KMRfolyUotG0jO9DIafzQ8KkAsZSi6Wy20Ri5cbXyZ5zmYaXCbEcB1HNO2mYc52GMN0PsQynPm2PCj+I4d6Ly8DDB8CWVyAmiFY8UnPqwuRgUKbE/R/fARHxu7u/1zWanLQYnQEX3MuhJYte4NkGV4iqzLllsyNTICzEzlMIrjmEiebIV8sLXGfnKCT5HYmcL5igGEDfEMWl+hFQ9cqJr95mYRysbKiklfOtdLdW3pJMKwSSFAAhST2ivisPsmG0NFiOIYUA2O+UHl1Nf/UmQX3OoGPVGPyVSS6KgPoujIXxEihJsFoBqpCDo0Ncb9kRIbHd/lFZ+viyrX5VDBrFr+KqTRUid5YIr/Xm8T074xF8vO78Fw+4+Mnm4mlAx4AelnJnCc+ou8Tvf3ZaoVnbJmi8LHHVG9kQuhAG7Z39n+Y5wiZo8EEiPHR6VRuAACFtIj5IbzxgAjImQ6wQ68I4n7jXzY327eW7eIbfEf/wqqU5MDDwD2A5wXODw4DqAAAAAElFTkSuQmCC" InformativeScreenshot="a50d9e1339eced80fa0948e8caa80097.jpg" Reference="4iMeWFZgFUuVDJQ2t7cOJQ/9tkiVm0ZNkmOGIxkONXFqw" Selector="&lt;html app='msedge.exe' title='AI Text Summarizer - One-Click Summarization (Ad-Free)' /&gt;" Title="AI Text Summarizer - One-Click Summarization (Ad-Free)" Url="https://quillbot.com/summarize" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: english to tamil - Search" sap:VirtualizedContainerService.HintSize="450,950" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="53ca35be-1cbd-4b8b-a7e7-f563b0571041" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,659.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Output" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA tta_input_ta'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="53ca35be-1cbd-4b8b-a7e7-f563b0571041" Text="[Input_Summarized_Text]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?pglt=43&amp;q=english+to+tamil&amp;cvid=0cd7bddeb4594c57beef8eda879c72f5&amp;gs_lcrp=EgZjaHJvbWUqBggBEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCDI3ODRqMGoxqAIAsAIA&amp;FORM=ANSPA1&amp;PC=LCTS" CVScreenId="76e56c76-f4c4-4e4b-ae8c-e8f130ee2c3f" CvTextArea="150, 362, 91, 19" CvTextArgument="Enter text" CvType="Text" DesignTimeRectangle="152, 359, 198, 36" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='tta_input_ta' type='' tag='TEXTAREA' class='ctxt    notxt         b_focusTextSmall' placeholder='Enter text' aaname='' /&gt;" Guid="2ca43759-5526-4f31-99e4-0ce5c43f0b6e" InformativeScreenshot="4b4aaf39fb8318c68105470eda03a4c6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='english to tamil - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NGetText DelayAfter="2" DelayBefore="5" DisplayName="Get Text 'TEXTAREA tta_output_ta'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="53ca35be-1cbd-4b8b-a7e7-f563b0571041" TextString="[Output]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?pglt=43&amp;q=english+to+tamil&amp;cvid=0cd7bddeb4594c57beef8eda879c72f5&amp;gs_lcrp=EgZjaHJvbWUqBggBEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCDI3ODRqMGoxqAIAsAIA&amp;FORM=ANSPA1&amp;PC=LCTS" CVScreenId="891e2435-fc72-4983-97e1-bb9a5268d983" CvTextArea="399, 362, 105, 19" CvType="AnyWordGroup" DesignTimeRectangle="401, 359, 207, 36" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='tta_output_ta' type='' tag='TEXTAREA' class='tta_no_click_outline           b_focusTextSmall' placeholder='Translation' aaname='' /&gt;" Guid="54cbdec6-11be-4a07-96c6-2c7f6dcd8d46" InformativeScreenshot="79d69c4089eabd8e8041095f1748fdbd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='english to tamil - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,116.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[Output]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFUSURBVFhHxZXbjQIxEAQJgRAIhb/7IZgL4UIgA0IhBEIgFK4bYall1e7aAg0tlYTas57x+MHu5/f0VdCsBM1K0KwEzUrQrARNQjqKs7iLx4ubuIgDfTMCmom0F07cki7hmD3NsQaaDU8ovEpKSDh2qgg0G1K/8qvwVjyTvH57CzLm3M+zBppGOsSk5o/ijMcizhwpjkDTSLmyC8UkkrvT4oe7gKaRcu83V+SYiL9TDIGmickeNN4j+cBOfWPQNDmZGDrZ+Q2NE2gaKR+c2S24UQyBppHyCl4pJpGmDm0DTSPliszMNRx+mtFsSP1D5FU+t0PyoXORef3MZrcSNBvS7FPcWOxWD5qJNPpn1HdiqAg0CclPs7cgO+Kb4uLatvRnYbMINN/BSaOAzSLQfBcnjQJWi0DzEzhpFLD4MqL5KaKI+g6MgmYlaFaCZiVoVoJmHafdP2+n4WnaaofzAAAAAElFTkSuQmCC" InformativeScreenshot="a40032b355051a650a2d985b3ffd5239.jpg" Selector="&lt;html app='msedge.exe' title='english to tamil - Search' /&gt;" Title="english to tamil - Search" Url="https://www.bing.com/search?pglt=43&amp;q=english+to+tamil&amp;cvid=0cd7bddeb4594c57beef8eda879c72f5&amp;gs_lcrp=EgZjaHJvbWUqBggBEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCDI3ODRqMGoxqAIAsAIA&amp;FORM=ANSPA1&amp;PC=LCTS" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Tamil Grammar Checker" sap:VirtualizedContainerService.HintSize="450,1414" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="932beac8-ec40-43ff-840a-404eca895b0e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1123.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_grammar_output" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type Into 'INPUT''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="932beac8-ec40-43ff-840a-404eca895b0e" Text="[Input_Grammar_Checker]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://127.0.0.1:5000/" CVScreenId="6a120698-51eb-4a51-bccc-6241af9c4513" ContentHash="d6I9xZUEAk-zorQ5solYdg" CvTextArea="692, 903, 94, 14" CvTextArgument="Enter Tamil text" CvType="Text" DesignTimeRectangle="693, 861, 200, 100" DesignTimeScaleFactor="0.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' placeholder='Enter Tamil text' aaname='' /&gt;" Guid="e8fa466e-5e81-4c79-b15d-64888b4797ca" InformativeScreenshot="bea33f50a780f4af61cb6481a70bd853.png" Reference="4iMeWFZgFUuVDJQ2t7cOJQ/Gcol-y4EAEG3kIkGmV_dUQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tamil Grammar Checker' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="382,228" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="932beac8-ec40-43ff-840a-404eca895b0e" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://127.0.0.1:5000/" CVScreenId="5e079bd2-00fb-4a45-bb0d-d8bebadb6df9" CvTextArea="692, 890, 37, 12" CvTextArgument="Submit" CvType="Text" DesignTimeRectangle="694, 887, 35, 18" DesignTimeScaleFactor="0.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='Submit' check:innerText='Submit' /&gt;" Guid="2948c9bf-bc8e-48bb-beb1-0ebccc318b09" InformativeScreenshot="6de220f6b8ef2cf8bddfd764c2ac2732.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tamil Grammar Checker' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Output Text'" sap:VirtualizedContainerService.HintSize="382,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_4" OutUiElement="[outputElement]" ScopeIdentifier="932beac8-ec40-43ff-840a-404eca895b0e" TextString="[str_grammar_output]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="http://127.0.0.1:5000/" CVScreenId="5e079bd2-00fb-4a45-bb0d-d8bebadb6df9" CvTextArea="693, 908, 59, 12" CvType="AnyWordGroup" DesignTimeRectangle="694, 905, 555, 22" DesignTimeScaleFactor="0.5" FuzzySelectorArgument="&lt;webctrl class='outputBox' tag='DIV' type='' aaname='                                                      ' /&gt;" Guid="ce4ddd65-4e1a-453c-b6f6-c9a35fd47765" InformativeScreenshot="5a74ad170c7fd1714a7fb6fbf75c1015.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tamil Grammar Checker' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,123.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[str_grammar_output]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Grammar Checked&quot;]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,111.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[str_grammar_output]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="Og3ejKuq4EepWPjR6NS8Vw" IconBase64="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" InformativeScreenshot="7986ba696d883bbafcce35359a2d750c.jpg" Reference="4iMeWFZgFUuVDJQ2t7cOJQ/pFCI_2ehrkqBRFnIPS6FPQ" Selector="&lt;html app='chrome.exe' title='Tamil Grammar Checker' /&gt;" Title="Tamil Grammar Checker" Url="http://127.0.0.1:5000/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,108.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Initial Tamil word count : 97                                                                      Final Tamil word count = 37 &quot;]" />
+  </Sequence>
+</Activity>

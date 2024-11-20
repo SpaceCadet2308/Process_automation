@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge AI Text Summarizer - One-Click Summarization (Ad-Free)",
+  "Type": "App",
+  "Id": "STsGapiqAE2NoFx6GAQJkg",
+  "Reference": "4iMeWFZgFUuVDJQ2t7cOJQ/STsGapiqAE2NoFx6GAQJkg",
+  "Created": "2024-10-07T07:06:11.4192484Z",
+  "Updated": "2024-10-07T07:06:11.4192484Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
